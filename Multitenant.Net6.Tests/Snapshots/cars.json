@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Id": "1",
+    "ExteriorColor": "Black",
+    "InteriorColor": "White",
+    "Name": "Honda City",
+    "Price": "1234",
+    "VIN": "JA4J3UA89PZ021646TEST123",
+    "TenantId": "Honda",
+    "Transmission": "Manual"
+  },
+  {
+    "Id": "2",
+    "ExteriorColor": "Red",
+    "InteriorColor": "Black",
+    "Name": "Honda Civic",
+    "Price": "2551",
+    "VIN": "Z021646TEST123JA4J3UA89P",
+    "TenantId": "Honda",
+    "Transmission": "Automatic"
+  }
+]
