@@ -1,0 +1,1 @@
+# .NET6-Multitenant-MediatR-StarterKit
