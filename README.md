@@ -3,6 +3,10 @@
 This starter kit is a .NET6 application with multitenant architecture with multiple databases that has an application of MediatR design pattern.
 Automatic migration for each tenant is using Entity Framework Core feature.
 
+<p align="center">
+  <img src="https://github.com/Ethan0007/.NET6-Multitenant-MediatR-StarterKit/blob/main/Images/http_request_1.png" alt="Sublime's custom image"/>
+</p>
+
 ## Features:
 * Multi database
 * Automatic migration
