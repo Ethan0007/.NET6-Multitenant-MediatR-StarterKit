@@ -18,7 +18,7 @@ namespace Multitenant.Net6.Application.Commands.Car
         public async Task<bool> Handle(CreateCarCommand command, CancellationToken cancellationToken)
         {
             await _repository.Add(new Car(command.Name, 
-                command.Price.GetValueOrDefault(),
+                command.Price,
                 command.VIN, command.Transmission, command.ExteriorColor, 
                 command.InteriorColor, command.TenantId));
 

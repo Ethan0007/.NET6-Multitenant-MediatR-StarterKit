@@ -22,7 +22,7 @@ namespace Multitenant.Net6.Application.Commands.Car
 
             if (result is null) return false;
 
-            result.SetValue(command.Name, command.Price.GetValueOrDefault(),
+            result.SetValue(command.Name, command.Price,
                 command.VIN, command.Transmission, command.ExteriorColor,
                 command.InteriorColor);
 
