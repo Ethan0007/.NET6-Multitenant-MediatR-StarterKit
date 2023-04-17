@@ -6,7 +6,7 @@ namespace Multitenant.Net6.Domain.DatabaseContext
 {
     public class AppDbContext : DbContext
     {
-        public string? TenantId { get; set; }
+        private string? _tenantId { get; set; }
 
         private readonly ITenantService _tenantService;
 
@@ -15,7 +15,7 @@ namespace Multitenant.Net6.Domain.DatabaseContext
         {
             _tenantService = tenantService;
 
-            TenantId = _tenantService.GetTenantInfo()?.TenantId;
+            _tenantId = _tenantService.GetTenantInfo()?.TenantId;
         }
 
         public DbSet<Car> Cars { get; set; }
@@ -24,7 +24,7 @@ namespace Multitenant.Net6.Domain.DatabaseContext
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Car>().HasQueryFilter(a => a.TenantId == TenantId);
+            modelBuilder.Entity<Car>().HasQueryFilter(a => a.TenantId == _tenantId);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
