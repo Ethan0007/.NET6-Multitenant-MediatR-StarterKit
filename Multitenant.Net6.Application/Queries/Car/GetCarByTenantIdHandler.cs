@@ -1,12 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Multitenant.Net6.Application.Interface;
 using Multitenant.Net6.Domain.Repository;
-using Multitenant.Net6.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Multitenant.Net6.Application.Queries.Car
 {

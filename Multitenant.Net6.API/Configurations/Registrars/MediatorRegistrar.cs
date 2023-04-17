@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using Multitenant.Net6.Services;
+using Multitenant.Net6.Application.Interface;
 
 namespace Multitenant.Net6.API.Configurations.Registrars
 {

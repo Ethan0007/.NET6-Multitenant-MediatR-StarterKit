@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Multitenant.Net6.Application.Interface;
 using Multitenant.Net6.Domain.Repository;
-using Multitenant.Net6.Services;
-  
+
 namespace Multitenant.Net6.Application.Commands.Car
 {
     using Car = Domain.Entity.Car;
